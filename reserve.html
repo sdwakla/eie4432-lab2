@@ -31,23 +31,21 @@
         <h1>Drink Ordering System</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse flex justify-content-center" id="navbarNav">
+                <ul class="navbar-nav column-gap-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order.html">Order</a>
+                        <a class="nav-link" href="./order.html">Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active link-primary fw-bold" aria-current="page" href="reserve.html">Reserve a Table</a>
+                        <a class="nav-link link-primary fw-bold" href="./reserve.html">Reserve a Table</a>
                     </li>
                 </ul>
             </div>
@@ -56,16 +54,16 @@
 
     <div class="container text-center">
         <svg width="400" height="100">
-            <circle class="table" cx="20%" cy="50%" r="30" onclick="selectTable(1)"/>
+            <circle class="table" cx="20%" cy="50%" r="30" onclick="selectTable(1)" />
             <text class="number" x="20%" y="50%" r="30" onclick="selectTable(1)">1</text>
 
-            <circle class="table" cx="40%" cy="50%" r="30" onclick="selectTable(2)"/>
+            <circle class="table" cx="40%" cy="50%" r="30" onclick="selectTable(2)" />
             <text class="number" x="40%" y="50%" r="30" onclick="selectTable(2)">2</text>
 
-            <circle class="table" cx="60%" cy="50%" r="30" onclick="selectTable(3)"/>
+            <circle class="table" cx="60%" cy="50%" r="30" onclick="selectTable(3)" />
             <text class="number" x="60%" y="50%" r="30" onclick="selectTable(3)">3</text>
 
-            <circle class="table" cx="80%" cy="50%" r="30" onclick="selectTable(4)"/>
+            <circle class="table" cx="80%" cy="50%" r="30" onclick="selectTable(4)" />
             <text class="number" x="80%" y="50%" r="30" onclick="selectTable(4)">4</text>
         </svg>
     </div>

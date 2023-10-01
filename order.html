@@ -19,28 +19,27 @@
         <h1>Drink Ordering System</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse flex justify-content-center" id="navbarNav">
+                <ul class="navbar-nav column-gap-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active link-primary fw-bold" aria-current="page" href="order.html">Order</a>
+                        <a class="nav-link link-primary fw-bold" href="./order.html">Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reserve.html">Reserve a Table</a>
+                        <a class="nav-link" href="./reserve.html">Reserve a Table</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <div class="container py-4">
         <form id="orderForm" method="POST">
             <div class="row">
@@ -87,8 +86,8 @@
                         <label class="btn btn-outline-success" for="iceLess">Less</label>
                     </div>
                     <div class="mt-2 mb-3 ms-3">
-                        <input type="radio" class="btn-check mb-2 ms-2 ms-lg-0" name="ice" id="iceWithout" value="withoutIce"
-                            autocomplete="off" onchange="calculatePrice()">
+                        <input type="radio" class="btn-check mb-2 ms-2 ms-lg-0" name="ice" id="iceWithout"
+                            value="withoutIce" autocomplete="off" onchange="calculatePrice()">
                         <label class="btn btn-outline-success" for="iceWithout">Without Ice</label>
                     </div>
                 </div>
